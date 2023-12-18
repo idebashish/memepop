@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemePop</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="meme-container">
+    <img src="" alt="Meme" id="meme-image">
+  </div>
+
+  <div id="controls">
+    <button id="prev-button">Prev</button>
+    <button id="pause-button">Pause</button>
+    <button id="next-button">Next</button>
+  </div>
+
+  <div id="meme-info">
+    <input type="text" id="reddit-url" readonly>
+    <button id="copy-url-button">Copy URL</button>
+  </div>
+
+  <div id="frequency-setting">
+    <label for="frequency-input">Frequency (mins):</label>
+    <input type="number" id="frequency-input" min="1" max="60" step="1" value="10">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
